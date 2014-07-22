@@ -1,0 +1,88 @@
+@import "bourbon";
+
+#sidebar {
+  transition: all 0.3s ease-in-out 0s;
+  min-height:400px;
+  height:100%;
+  width:210px;
+  left:0;
+  float:left;
+  background: white;
+
+  ul.sidebar-menu {
+    padding: 0;
+    margin: -2px 0 0;
+    li {
+      a {
+        padding: 12px 12px 12px 25px;
+        color: #5f5c57;
+        display:block;
+        transition: all 0.3s ease 0s;
+        cursor:pointer;
+        text-decoration:none;
+        i {
+          color:#000;
+          font-size: 15px;
+          padding-right: 6px;
+        }
+      }
+      a.active,a:hover {
+        background: #ff634d;
+        border-bottom: 1px solid #ff8776;
+        border-top: 1px solid #ff8776;
+        color:#FFF;
+        i {
+          font-size: 15px;
+          padding-right: 6px;
+          color:#FFF;
+        }
+      }
+    }
+  }
+
+
+  .sidebar-user {
+    padding: 20px 0px 20px 88px;
+    border-top: 2px solid #efefef;
+    border-bottom: 1px solid #efefef;
+
+    .sidebar-user-name {
+      font-size: 14px;
+      line-height: 26px;
+      margin-top: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #5f5c57;
+    }
+    .sidebar-user-avatar {
+      background: rgba(0, 0, 0, 0.15);
+      @include border-top-radius(34px);
+      @include border-bottom-radius(34px);
+      @include border-left-radius(34px);
+      @include border-right-radius(34px);
+      float: left;
+      height: 68px;
+      margin-left: -78px;
+      padding: 2px;
+      width: 68px;
+      img {
+        margin:10px 0 0 10px;
+      }
+    }
+  }
+}
+
+#sidebar.hide-left-bar {
+  left: -210px !important;
+}
+
+#main-content {
+  left: 209px;
+  position: absolute;
+  right: 0;
+  @include transition(all 0.3s ease-in-out 0s);
+}
+
+#main-content.merge-left {
+  left: 0px !important;
+}

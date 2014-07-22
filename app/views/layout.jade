@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title Skelet-Ex
+    meta(name='description', content='Skelet for my express projets')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=0.5 maximum-scale=1.0')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+    link(rel='stylesheet', href='stylesheets/app/application.css')
+    link(rel='stylesheet', href='stylesheets/app/style-responsive.css')
+    link(rel='stylesheet', href='stylesheets/app/common.css')
+    link(rel='stylesheet', href='stylesheets/app/sidebar.css')
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
+    link(rel='stylesheet', href='stylesheets/vendor/bootstrap.min.css')
+
+  body
+    .header.navbar.navbar-inverse.box-shadow.navbar-fixed-top
+      .navbar-inner
+        ul.nav.navbar-nav
+          li.sidebar-toggle-box
+            a(href='#')
+              i.fa.fa-bars
+
+    .page-container
+      #sidebar.nav-collapse.top-margin.fixed.box-shadow2.hidden-xs
+        .leftside-navigation(style='overflow: hidden; outline: none;', tabindex='5000')
+          .sidebar-section.sidebar-user.clearfix
+            .sidebar-user-avatar
+              a(href='/')
+                img(alt="avatar", src='/img/boosket.png')
+            a(href='/')
+              .sidebar-user-name Boosket Team
+          ul.sidebar-menu
+            li
+              a(href='/#dashboard')
+                i.fa.fa-dashboard
+                span Dashboard
+
+      block content
+
+    script(data-main='js/main', src='/js/vendor/require.js')

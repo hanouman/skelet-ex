@@ -1,0 +1,15 @@
+{
+  "name": "bower-bourbon",
+  "version": "3.1.8",
+  "main": "./_bourbon.scss",
+  "dependencies": {},
+  "gitHead": "12ba22379616af069e605fd8094ca914400297d4",
+  "readme": "# BOURBON for BOWER\n\nInstall Bourbon by Thoughbot via Bower.\n\nBourbon: https://github.com/thoughtbot/bourbon\nBower: https://github.com/bower/bower",
+  "readmeFilename": "README.md",
+  "_id": "bower-bourbon@3.1.8",
+  "description": "Install Bourbon by Thoughbot via Bower.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hmps/bourbon.git"
+  }
+}

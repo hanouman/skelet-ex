@@ -5,6 +5,6 @@ An Application Architecture Using Express,Backbone Marionnette, RequireJS, Coffe
 
 Setup
 -------------
-npm install
-grunt
-node app/compiled/app.js
+- npm install
+- grunt
+- node app/compiled/app.js

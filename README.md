@@ -1,7 +1,7 @@
 skelet-ex
 =========
-For init my express projects
-An Application Architecture Using Express,Backbone Marionnette, RequireJS, CoffeScript,Bootsrap and Mocha
+- For init my express projects
+- An Application Architecture Using Express,Backbone Marionnette, RequireJS, CoffeScript,Bootsrap and Mocha
 
 Setup
 -------------

@@ -63,4 +63,4 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-sass"
   grunt.loadNpmTasks "grunt-sync"
   grunt.loadNpmTasks "grunt-contrib-handlebars"
-  grunt.registerTask 'default', ['coffee', 'sass','sync']
+  grunt.registerTask 'default', ['coffee', 'sass','sync','handlebars']

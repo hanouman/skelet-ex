@@ -1,3 +1,10 @@
 skelet-ex
 =========
-An Application Architecture Using Express,Backbone Marionnette, RequireJS, CoffeScript and Mocha
+For init my express projects
+An Application Architecture Using Express,Backbone Marionnette, RequireJS, CoffeScript,Bootsrap and Mocha
+
+Setup
+-------------
+npm install
+grunt
+node app/compiled/app.js
